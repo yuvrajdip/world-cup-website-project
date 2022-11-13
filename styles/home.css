@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/*************
+       Banner Section Starts
+       *******************/
+
+.banner{
+    /* top: 50px; */
+    /* width: 1321px;
+    height: 646px;
+    left: 140px; */
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    margin: 50px; /* media */ 
+    padding: 60px 10px 0px 70px; /* media */
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.banner:hover{
+    background-color: rgb(14, 54, 94);
+}
+
+.banner-split{
+    width: 50%;
+}
+
+.banner-title , .banner-paragraph{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* media */
+    color: white; 
+    font-size: 3em;  /* media */
+}
+
+.banner-paragraph{
+    font-size: 16px; /* media */
+    font-weight: normal;
+}
+
+.banner-split img{
+    width: 100%; /*media */
+}
+
+.watch-now{
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 25px; /* media */
+    justify-content: space-evenly;
+    width: 35%; /* media */
+    transition: background-color 0.15s;
+}
+
+.watch-now:hover{
+    background-color: tomato;
+}
+
+.watch-now-link{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 20px; /* media */
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.watch-now fa-angle-right{
+    color: #FFFFFF;
+    background: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/********** Banner Section ***********/
+
+/*********************************
+            Main Section Style
+**********************************/
+
+.container{
+    margin: 0px auto ;
+    display: flex;
+    column-gap: 20px;
+}
+
+.container-menu{
+    min-width: 250px;
+    max-height: 300px;
+    border-radius: 10px;
+    background-color: #161616;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px 15px;
+    min-width: 150px;
+    max-height: 20px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.menu-items:hover{
+    background-color: #DD0000;
+    color: white;
+}
+
+#unique-menu-item{
+    background-color: #DD0000;
+    color: white;
+}
+
+#unique-menu-item:hover{
+    background-color: white;
+    color: black;
+}
+
+.container-menu .menu-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-grid-blogs{
+    /* border: 2px solid brown; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.articles{
+    /* padding-left: 10px; */
+    border: 1px solid lightgrey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.transfer-button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    border: 1px solid lightcoral;
+    border-radius: 3px;
+}
+
+.watch-time{
+    display: flex;
+    justify-content: space-around;
+}
+
+.view-all > button{  /* media tablet */
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    padding: 25px 25px; /* media */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    display: none;
+}
+
+
+/*****************************
+        Footer Styles 
+****************************/
+
+footer{
+    background-color: #161616;
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    height: 300px;
+}
+
+.goal h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 0px;
+    padding-top: 70px;
+}
+
+footer hr{
+    margin: 50px 40px 30px 40px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+    color: lightcyan;
+}
+
+/**************** 
+                   Media Query 
+*********************************/
+
+/* For Mobile */
+
+@media screen and (max-width:576px){
+
+    /* Header Section */
+    .banner{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .banner-split{
+        width: 100%;
+    }
+
+    .banner-title,.banner-paragraph{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .banner-paragraph{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .watch-now{
+        text-decoration: none;
+        background: #DD0000;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: 0 auto;
+    }
+
+    .banner-split img{
+        margin: 20px;
+    }
+
+    /* main section */
+
+    .container{
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+
+    .container-menu{
+        border-radius: 0px;
+        max-height: 200px;
+    }
+
+    .menu-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 15px;
+        min-width: 150px;
+        max-height: 20px;
+        border-radius: 12px;
+        padding: 11px;
+    }
+
+    .container-grid-blogs{
+        /* border: 2px solid brown; */
+        grid-template-columns: repeat(1,300px);
+        row-gap: 10px;
+        margin: 20px auto;
+    }
+
+    .articles{
+        padding: auto auto;
+    }
+
+    .articles img{
+        width: 299px;
+        height: 150px;
+    }
+
+    /* Fixing Footer */
+
+    footer{
+        height: 600px;
+    }
+
+    .goal h3{
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-flex-item{
+        margin: 8px auto;
+        align-items: center;
+    }
+}
+
+/* Tablet View */
+@media screen and (min-width:577px) and (max-width:900px){
+
+    .banner{
+        margin-bottom: 10px;
+    }
+    .banner-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .banner-paragraph{
+        font-size:12px;
+        font-weight: 400;
+    }
+
+    .container{
+        flex-direction: column;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .container-menu{
+        width: 100%;
+        height: 100px;
+        border-radius: 1px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container-grid-blogs{
+        /* border: 2px solid brown; */
+        grid-template-columns: repeat(2,320px);
+        row-gap: 20px;
+        column-gap: 15px;
+        margin: 20px auto;
+    }
+
+    .view-all > button{  /* media tablet */
+        text-decoration: none;
+        background: #DD0000;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        padding: 25px 25px; /* media */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px auto;
+        color: white;
+        font-weight: bolder;
+        font-size: large;
+        /* display: none; */
+    }
+}
+
+/* Upcoming Match Website Design */
+
+.articles .german-vs-france{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
